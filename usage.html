@@ -1,0 +1,173 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>Usage &#8212; Lumache 0.1 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css" />
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/sphinx_highlight.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Welcome to Lumache’s documentation!" href="index.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="usage">
+<h1>Usage<a class="headerlink" href="#usage" title="Permalink to this heading">¶</a></h1>
+<section id="installation">
+<span id="id1"></span><h2>Installation<a class="headerlink" href="#installation" title="Permalink to this heading">¶</a></h2>
+<p>To use Sphinx, first install it using pip:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp gp-VirtualEnv">(.venv)</span> <span class="gp">$ </span>pip<span class="w"> </span>install<span class="w"> </span>sphinx
+</pre></div>
+</div>
+<p>To start creating documentation, run the following command:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">sphinx-quickstart docs</span>
+</pre></div>
+</div>
+<p>&gt; Separate source and build directories (y/n) [n]: Write “y” (without quotes) and press Enter.</p>
+<p>&gt; Project name: Write “Lumache” (without quotes) and press Enter.</p>
+<p>&gt; Author name(s): Write “Graziella” (without quotes) and press Enter.</p>
+<p>&gt; Project release []: Write “0.1” (without quotes) and press Enter.</p>
+<p>&gt; Project language [en]: Leave it empty (the default, English) and press Enter.</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">sphinx-build -b html docs/source/ docs/build/html</span>
+</pre></div>
+</div>
+<p>An example of documenting code objects in Python language:</p>
+</section>
+<section id="print-value">
+<h2>Print value<a class="headerlink" href="#print-value" title="Permalink to this heading">¶</a></h2>
+<p>To print the value of a variable, you can use the <code class="docutils literal notranslate"><span class="pre">print()</span></code> function:</p>
+<dl class="py function">
+<dt class="sig sig-object py" id="print">
+<span class="sig-name descname"><span class="pre">print</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#print" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the value of the variable passed in the bracket.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>value</strong> (<em>int</em><em>, </em><em>float</em><em>, </em><em>str</em><em>, </em><em>list</em><em>[</em><em>str</em><em>] or </em><em>None</em>) – Optional variable.</p>
+</dd>
+<dt class="field-even">Raises<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="#StringError" title="StringError"><strong>StringError</strong></a> – If the value is invalid.</p>
+</dd>
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The value of the variable.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>list[str]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<p>The <code class="docutils literal notranslate"><span class="pre">value</span></code> parameter should be either <code class="docutils literal notranslate"><span class="pre">[str]</span></code> with single quotation marks <code class="docutils literal notranslate"><span class="pre">''</span></code> or double quotations mark <code class="docutils literal notranslate"><span class="pre">&quot;&quot;</span></code>. Otherwise, <a class="reference internal" href="#print" title="print"><code class="xref py py-func docutils literal notranslate"><span class="pre">print()</span></code></a> will raise an exception.</p>
+<dl class="py exception">
+<dt class="sig sig-object py" id="StringError">
+<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">StringError</span></span><a class="headerlink" href="#StringError" title="Permalink to this definition">¶</a></dt>
+<dd><p>Raised if the value is not enclosed in single quotations mark or double quotations mark.</p>
+</dd></dl>
+
+<p>Host Sphinx documentation from servers:</p>
+<ol class="arabic simple">
+<li><p>GitHub Pages</p></li>
+<li><p>Read The Docs</p></li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This project is under active development.</p>
+</div>
+</section>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">Lumache</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Usage</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#installation">Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#print-value">Print value</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#print"><code class="docutils literal notranslate"><span class="pre">print()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#StringError"><code class="docutils literal notranslate"><span class="pre">StringError</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="index.html" title="previous chapter">Welcome to Lumache’s documentation!</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2023, YJN.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 6.2.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.13</a>
+      
+      |
+      <a href="_sources/usage.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
